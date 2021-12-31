@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>  
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <script src="/js/main.js" defer></script>
+    
+    <title>Free Code Camp Survey</title>
+
+  </head>
+
+  <body> 
+
+    <main> 
+
+        <!-- Landing page start--> 
+
+    <section id="sec-1">
+      <div class="container-1"> 
+
+        <div> 
+
+            <h1 id="title">WOULD YOU CARE TO PARTICIPATE IN OUR SHORT SURVEY? </h1>
+
+             <hr> 
+
+            <p id="description">
+                
+                A ground breaking discovery in the medical field has led to
+                a potential cure for one  of the most pluaging illnesses of our lifetime, <em>Diabetes</em>. A rare 
+                form of bacteria with key genetic make up can help humans stimulate insuline production and act against 
+                insulin resistance. This discovery provides powerful insights about the how our team of professional doctors view 
+                diabetes entirely.However,as promising as the data may suggest and how novel the study may be we would 
+                like you to participate in our short survey so that you too can play a part in our most humble and heroic 
+                pursuit to beat the illness and give the countless number of suffering patience indeed their sweet victory. If you're currently 
+                treating diabetes please consider taking our short survey.  
+
+            </p> 
+
+        </div>
+          
+        <div class="slideshow"> 
+          
+          <div id="short-text">   
+           <h4 id="short-text-h4">We should not take more than 5 minuets of your time!</h4>
+         </div>
+
+        </div>   
+    
+        <a href="#sec-2" class="scroll"><button id="start-btn">START NOW </button></a>
+
+      </div>   
+         </section> 
+
+        <!-- Landing page end -->
+
+    <section id="sec-2">
+
+    <div class="container-2 display ">
+      
+      <form action="#" id="survey-form"> 
+                
+          <div class="contact">
+
+                    <div id="input-blocks"> 
+
+                      <label for="name" id="name-label"> Please enter your name* </label>  
+                      <input type="text" id="name" class="required-fields " placeholder="e.g Thabo" required/>
+                    
+                    </div>    
+                    <div id="input-blocks"> 
+
+                      <label for="name" id="name-label"> Please enter your last name* </label>  
+                      <input type="text" id="name1" class="required-fields " placeholder="e.g Mngoma" required/>
+                    
+                    </div>    
+                    <div id="input-blocks"> 
+
+                      <label for="name" id="name-label"> Please enter your middle name* </label>  
+                      <input type="text" id="name2" class="required-fields " placeholder="e.g Siphiwe " required/>
+                    
+                    </div>    
+
+                    <div id="input-blocks"> 
+
+                      <label for="email" id="email-label"> Please enter your e-mail</label>
+                      <input type="email" class="required-fields" id="email" placeholder="username@email.com" required />
+                
+                    </div>
+
+                    <div id="input-blocks"> 
+
+                      <label for="number" id="number-label">Please enter your cellphone numbers: </label>
+                      <!-- don't forget to set the minimum and maximum value attributes-->
+                      <input type="number" class="required-fields" min="0" max="999999999" id="number" placeholder="e.g 23" required/>
+                  
+                    </div>
+         </div> 
+
+            <label for="dropdown">What type of diebetes are you diagnosed with ?  </label>
+           
+          <select name="dropdown" id="dropdown">
+       
+            <option value="Type-1" id="type">Type-1</option>
+            <option value="Type-2" id="type">Type-2</option>
+        
+          </select> 
+             
+          
+
+            <fieldset>
+
+              <legend>what is your age group ?</legend>
+              
+              
+              <input name="age" type="radio" id="radio" checked  />  > 18 years
+              <br>
+              <input name="age" type="radio" id="radio-checkbox" /> 18 < years <= 30
+              <br>
+              <input name="age" type="radio" id="radio-checkbox" /> 30 < years <= 50
+              <br>
+              <input name="age" type="radio" id="radio-checkbox" /> > 50 years 
+              <br> 
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend> Do you currently smoke ?</legend>
+
+              <input name="smoke" type="radio" id="radio-checkbox" checked/> regularly
+              <br>
+              <input name="smoke" type="radio" id="radio-checkbox" /> on frequent occssion
+              <br>
+              <input name="smoke" type="radio" id="radio-checkbox" /> sparringly 
+              <br>
+              <input name="smoke" type="radio" id="radio-checkbox" /> Never 
+               <br>
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Do you consume alcoholic substances ?</legend>
+
+              <input name = "alcohol" type="radio" id="radio-checkbox" checked /> regularly 
+              <br>
+              <input name = "alcohol" type="radio" id="radio-checkbox"/> on frequent occasion 
+              <br>
+              <input name = "alcohol" type="radio" id="radio-checkbox" /> sparringly 
+              <br>
+              <input name = "alcohol" type="radio" id="radio-checkbox"/> Never
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>How would you describe the severity of your symptoms ?</legend>
+
+              <input name ="severe" type="radio" id="radio-checkbox" checked/> Mild 
+              <br>
+              <input name ="severe"  type="radio" id="radio-checkbox"/> Moderate 
+              <br>
+              <input name ="severe"  type="radio" id="radio-checkbox"/> severe 
+              <br>
+              <input name ="severe"  type="radio" id="radio-checkbox"/>very severe
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Which of the following best describes your current medication ?</legend>
+
+              <input type="checkbox" id="radio-checkbox" value="med-1"/>regular insulin (Humulin and Novolin)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-2"/>insulin aspart (NovoLog, FlexPen, Fiasp)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-3"/>insulin lispro (Humalog)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-4"/>insulin isophane (Humulin N, Novolin N)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-5"/>insulin degludec (Tresiba)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-6"/>insulin glargine (Lantus)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-7"/>insulin detemir (Levemir)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-8"/>insulin glargine (Toujeo)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-9"/>NovoLog Mix 70/30 (insulin aspart protamine-insulin aspart)
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="med-10"/>Humalog Mix 75/25 (insulin lispro protamine-insulin lispro)
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Have you undergone surgery due to  complications of diabetes ?</legend>
+               
+              <input name="surgery" type="radio" id="radio-checkbox" checked/> Yes
+               <br>
+              <input name="surgery" type="radio" id="radio-checkbox"/> No
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Have you also been diagnosed for the following chronic illnesses ?</legend>
+
+              <input type="checkbox" id="radio-checkbox" value="illness-1" /> Renal diseases
+               <br>
+              <input type="checkbox" id="radio-checkbox" value="illness-2"/> Hypertension 
+               <br>
+              <input type="checkbox" id="radio-checkbox" value="illness-3" /> Any  cancer
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="illness-4" /> GI related diseases
+
+            </fieldset>
+
+            <fieldset>
+
+              <legend>Please select one or more of the following option</legend>
+
+              <input type="checkbox" id="radio-checkbox" value="opt-1" /> Willing to relocate. 
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="opt-2"/> Have own transport. 
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="opt-3"/> Willing to change diet.
+              <br>
+              <input type="checkbox" id="radio-checkbox" value="opt-4"/> Willing to pause using  other unprescribed substances. 
+
+            </fieldset>
+
+            <label for="comments" >Please specify any special concerns for any special needs not mentioned above</label>
+            
+              <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+              <br>  
+
+            <button id="submit">SUBMIT</button>
+            
+          </form>
+
+        </div> 
+        </section>  
+
+  <div class="modal-container"> 
+  
+    <div class="modal">
+
+       <div class="circle-div"> 
+
+        <div class="circle">
+          <i class="fa fa-3x fa-check"></i>
+        </div> 
+
+      </div>
+      
+      <div class="modal-text">
+
+        <h3 class="modal-title">Thank you for your participation</h3> 
+       
+        <p class="modal-para">
+          
+        Your contribution is invaluable to us. We trust that the 
+        information provided best represent your current status 
+        with diabetes. We are working everyday with different doctors  
+        around the world to  fight this illness. We are again grateful
+        for your conribution and we wish a speedy recovery and a healthier life. 
+          
+          <br>
+          <hr>
+          <br>
+        <em>For further communication we will use the contact information provided</em>
+        </p>  
+
+      </div> 
+
+      <div class="btn-container"> 
+        <a href="#"><button id="dismiss-btn">Dismiss</button></a>
+      </div> 
+
+    </div>
+        
+  </div>
+
+    </main>
+
+  </body>
+
+</html>
